@@ -21,4 +21,5 @@ public class ConcortHotelPage {
     public WebElement basariliGirisYazisi;
     @FindBy (xpath = "//*[@id=\"divMessageResult\"]/div/span")
     public WebElement isLoginFailed;
+
 }

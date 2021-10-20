@@ -28,7 +28,4 @@ public class AmazonPage {
 
     @FindBy(xpath = "//span[@class='a-size-medium a-color-base a-text-normal']")
     public WebElement ilkÜrun;
-
-
-
 }
