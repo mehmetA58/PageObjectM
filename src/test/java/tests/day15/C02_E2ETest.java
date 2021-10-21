@@ -6,6 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pages.ConcortHotelPage;
 import pages.QAConcortPage;
 import utilities.ConfigReader;
@@ -64,7 +65,10 @@ public class C02_E2ETest {
         qaConcortPage.hotelRoomsButonu.click();
 
         //12. "LIST OF HOTELROOMS" textinin göründüğünü doğrulayın.
-        Assert.assertTrue(qaConcortPage.listOfHotelRoomsYazisi.isDisplayed());
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(qaConcortPage.listOfHotelRoomsYazisi.isDisplayed());
+       //--> Assert.assertTrue(qaConcortPage.listOfHotelRoomsYazisi.isDisplayed());
+        softAssert.assertAll();
 
     }
 
