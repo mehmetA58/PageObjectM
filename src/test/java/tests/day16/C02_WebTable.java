@@ -23,7 +23,7 @@ public class C02_WebTable {
         qaConcortPage.basliklarListesi.stream().forEach(t-> System.out.println(t.getText()));
         // ○ Table’daki tum body’I ve başlıkları(headers) konsolda yazdırın.
 
-        System.out.println(qaConcortPage.tBodyTumu.getText());
+        //System.out.println(qaConcortPage.tBodyTumu.getText());
         //● printRows() metodu oluşturun //tr
         System.out.println(qaConcortPage.birinciSatir.getText());
         // ○ table body’sinde bulunan toplam satir(row) sayısını bulun.
