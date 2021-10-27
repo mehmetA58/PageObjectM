@@ -18,7 +18,7 @@ public class C05_NegativeTestConfigReader extends TestBase {
 
         ConcortHotelPage concortHotelPage=new ConcortHotelPage(driver);
         // https://www.concorthotel.com/ adresine git
-        driver.get(ConfigReader.getProperty("CHUrl"));
+        driver.get(ConfigReader.getProperty("CHQAUrl"));
         // login butonuna bas
         concortHotelPage.firstlogIn.click();
         // test data username: manager1

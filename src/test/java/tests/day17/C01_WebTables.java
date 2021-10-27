@@ -6,7 +6,7 @@ import pages.QAConcortPage;
 
 public class C01_WebTables {
 
-    @Test
+    @Test (groups = "birinciGrup")
     public void test(){
         //Bir class oluşturun : C02_WebTables
         //● login() metodun oluşturun ve oturum açın.

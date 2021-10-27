@@ -74,11 +74,14 @@ public class C01_ReadExcel {
         //A ile başlayan
         List<String>aIleBaslayanSehirler=new ArrayList<>();
 
-        for (String each:ikinciSutun) {
-            if (each.startsWith("A")){
-                aIleBaslayanSehirler.add(each);
-            }
-        } System.out.println(aIleBaslayanSehirler);
+//        for (String each:ikinciSutun) {
+//            if (each.startsWith("A")){
+//                aIleBaslayanSehirler.add(each);
+//            }
+//        } System.out.println(aIleBaslayanSehirler);
+
+        ikinciSutun.stream().filter(t->t.startsWith("A")).forEach(t->aIleBaslayanSehirler.add(t));
+        System.out.println(aIleBaslayanSehirler);
 
 
         //eger tum datayi java'dakullanilabilir bir collection'a cevirmek istesek
