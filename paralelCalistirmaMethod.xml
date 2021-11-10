@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="package paralel calistirma" parallel="tests">
+    <test name="paralel package">
+        <packages>
+            <package name="tests.day13"></package>
+
+        </packages>
+    </test>
+    <test name="paralel package1">
+        <packages>
+            <package name="tests.day17"></package>
+        </packages>
+    </test>
+</suite>

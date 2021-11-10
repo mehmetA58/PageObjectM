@@ -52,7 +52,7 @@ public  List<WebElement> columnListesi;
 
 @FindBy(xpath = "//tbody//tr//td[5]")
 public List<WebElement> besinciSutunListesi;
- @FindBy(linkText = "Log in")
+ @FindBy(partialLinkText = "Log in")
  public WebElement firstlogIn;
  @FindBy(id = "UserName")
  public WebElement userName;

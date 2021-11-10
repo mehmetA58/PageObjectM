@@ -24,8 +24,8 @@ public abstract class TestBaseRapor {
         extentReports.setSystemInfo("Enviroment","QA");
         extentReports.setSystemInfo("Browser", ConfigReader.getProperty("browser")); // chrome, firefox
         extentReports.setSystemInfo("Automation Engineer", "Mehmet");
-        extentHtmlReporter.config().setDocumentTitle("window handle Testi");
-        extentHtmlReporter.config().setReportName("window handle Testi");
+        extentHtmlReporter.config().setDocumentTitle("Test");
+        extentHtmlReporter.config().setReportName("Test");
     }
     // Her test methodundan sonra eğer testte hata varsa, ekran görüntüsü alıp rapora ekliyor
     @AfterMethod(alwaysRun = true)
