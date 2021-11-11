@@ -9,13 +9,15 @@ public class AmazonPage {
     WebDriver driver;
 //bir page sayfasi oluşturulduğunda mutlaka(must)yapmamız gereken şey
     //bir constructor oluşturup driver'a ilk degeri atamanktir(instantiate)
-    public AmazonPage(WebDriver driver){//------>yeni sayfa oluştururken bunu copy-paste yapabilirdik ama yapmadık :)<---------
+    public AmazonPage(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);
 
     }
 
+public AmazonPage(){
 
+}
 // WebElement aramaKutusu=driver.findElement(By.id("twotabsearchtextbox"));
     @FindBy(id="twotabsearchtextbox")
     public WebElement aramaKutusu;
